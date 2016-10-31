@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+package prot;
+
+option java_package = "task.prot";
+option java_outer_classname = "DeveloperProto";
+
+message Developer{
+
+	required string name = 1;
+	required int32 id = 2;
+	optional string phone = 3;
+	repeated ProgrammingLanguage knownLanguages = 4;
+
+
+}
+
+enum ProgrammingLanguage{
+		JAVA = 1;
+		PYTHON = 2;
+		SCALA = 3;
+		JAVA_SCRIPT = 4;
+
+	}

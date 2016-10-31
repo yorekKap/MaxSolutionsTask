@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "developer.proto";
+
+package prot;
+
+option java_package = "task.prot";
+option java_outer_classname = "SoftwareProto";
+
+message Software{
+
+	required int32 id = 1;
+	required ProgrammingLanguage language = 2;
+	optional string title = 3;
+	optional int32 linesOfCode = 4;
+
+
+}

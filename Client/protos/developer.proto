@@ -1,0 +1,16 @@
+message Developer{
+
+		enum ProgrammingLanguage{
+			JAVA = 1;
+			PYTHON = 2;
+			SCALA = 3;
+			JAVA_SCRIPT = 4;
+
+	}
+
+	required string name = 1;
+	required int32 id = 2;
+	optional string phone = 3;
+	repeated ProgrammingLanguage knownLanguages = 4;
+
+}

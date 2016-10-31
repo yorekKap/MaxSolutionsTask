@@ -1,0 +1,17 @@
+message Software{
+
+enum ProgrammingLanguage{
+		JAVA = 1;
+		PYTHON = 2;
+		SCALA = 3;
+		JAVA_SCRIPT = 4;
+
+	}
+
+
+	required int32 id = 1;
+	required ProgrammingLanguage language = 2;
+	optional string title = 3;
+	optional int32 linesOfCode = 4;
+
+}
